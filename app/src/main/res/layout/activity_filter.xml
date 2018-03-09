@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.illuminous.vittles.FilterActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/rest2"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_search_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Search By: "
+        android:textSize="50sp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edit_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="keyword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/text_search_by"
+        android:background="@drawable/edit_transparent"
+        android:padding="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="location"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/edit_keyword"
+        android:background="@drawable/edit_transparent"
+        android:padding="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="radius"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/edit_location"
+        android:background="@drawable/edit_transparent"
+        android:padding="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@drawable/button_search_transparent"-->
+        <!--android:text="search"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="64dp"-->
+        <!--android:textSize="32sp"-->
+        <!--android:padding="8dp"-->
+        <!--android:onClick="searchFood"/>-->
+
+    <ImageView
+        android:id="@+id/button_search"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:src="@drawable/searchicon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:padding="8dp"
+        android:background="@drawable/button_search_transparent"
+        android:onClick="searchFood"/>
+
+    <Button
+        android:id="@+id/button_open_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:background="@drawable/green_transparent"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Open Now"
+        android:layout_below="@id/edit_radius"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:onClick="openNowSwitch"/>
+
+
+
+</RelativeLayout>
